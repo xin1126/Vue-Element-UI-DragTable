@@ -1,6 +1,13 @@
 <template>
-  <div>
+  <div class="container">
     <Sortable
+      class="item"
+      :tableData="tableData"
+      :labelText="labelText"
+      :tableRowClassName="tableRowClassName"
+    />
+    <Draggable
+      class="item"
       :tableData="tableData"
       :labelText="labelText"
       :tableRowClassName="tableRowClassName"
@@ -10,9 +17,11 @@
 
 <script>
 import Sortable from "@/components/Sortable.vue";
+import Draggable from "@/components/Draggable.vue";
 export default {
   components: {
-    Sortable
+    Sortable,
+    Draggable
   },
   data() {
     return {
@@ -77,5 +86,12 @@ export default {
 
 .el-table__row {
   cursor: pointer;
+}
+
+.container {
+  display: flex;
+  .item {
+    width: 40%;
+  }
 }
 </style>

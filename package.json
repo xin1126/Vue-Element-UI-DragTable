@@ -10,9 +10,11 @@
   "dependencies": {
     "core-js": "^2.6.5",
     "element-ui": "^2.11.1",
+    "element-ui-el-table-draggable": "^1.2.10",
     "sortablejs": "^1.10.0-rc3",
     "vue": "^2.6.10",
-    "vue-router": "^3.0.3"
+    "vue-router": "^3.0.3",
+    "vuedraggable": "^2.24.3"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.11.0",
